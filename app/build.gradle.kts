@@ -51,6 +51,7 @@ android {
 }
 
 dependencies {
-    compileOnly(libs.libxposed.api)
-    implementation(libs.libxposed.service)
+    // 强制使用公共云端能下载到的 101.0.0 正式版
+    compileOnly("io.github.libxposed:api:101.0.0")
+    implementation("io.github.libxposed:service:101.0.0")
 }
