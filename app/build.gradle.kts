@@ -51,7 +51,6 @@ android {
 }
 
 dependencies {
-    // 这里已经将 API 和 Service 的依赖直接写死为 101 版本
-    compileOnly("io.github.libxposed:api:101")
-    implementation("io.github.libxposed:service:101")
+    compileOnly(libs.libxposed.api)
+    implementation(libs.libxposed.service)
 }
